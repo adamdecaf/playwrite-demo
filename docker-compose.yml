@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  playwright:
+    build: .
+    network_mode: host
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./screenshots:/app/screenshots
+    environment:
+      - NODE_ENV=production
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 2G

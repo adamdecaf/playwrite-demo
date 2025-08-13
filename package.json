@@ -1,0 +1,9 @@
+{
+  "name": "playwright-server",
+  "version": "1.0.0",
+  "dependencies": {
+    "express": "^4.18.2",
+    "playwright": "^1.47.0",
+    "ws": "^8.18.0"
+  }
+}
